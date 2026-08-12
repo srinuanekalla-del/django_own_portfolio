@@ -1,0 +1,232 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srinivasula Reddy | Backend Developer</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Srinivasula <span>Reddy</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1>Srinivasula Reddy</h1>
+      <h2 class="hero-role">Python Backend Developer</h2>
+      <p class="hero-desc">
+        I build scalable, secure and high performance backend applications using
+        Python, Django, REST APIs and MySQL.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="{% static 'images/profile.jpg' %}" alt="Srinivasula Reddy">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="{% static 'images/profile.jpg' %}" alt="Srinivasula Reddy">
+      </div>
+      <div class="about-text">
+        <p>
+          I'm a Python backend developer focused on building reliable, well
+          structured web applications. I enjoy designing clean REST APIs,
+          modeling data efficiently, and writing code that's easy for other
+          developers to read and extend.
+        </p>
+        <p>
+          My core stack is Python and Django, backed by MySQL for data storage
+          and Git for version control. I care about writing secure code,
+          understanding how systems scale, and shipping features that actually
+          solve the problem in front of me.
+        </p>
+        <div class="about-stats">
+          <div class="stat-box">
+            <h3>6+</h3>
+            <p>Projects Built</p>
+          </div>
+          <div class="stat-box">
+            <h3>3+</h3>
+            <p>Backend Frameworks</p>
+          </div>
+          <div class="stat-box">
+            <h3>100%</h3>
+            <p>Commitment to Clean Code</p>
+          </div>
+        </div>
+        <a href="{% static 'files/resume.pdf'%}" class="btn btn-primary" download>Download Resume</a> 
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3>Python</h3>
+        <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Django</h3>
+        <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>REST APIs</h3>
+        <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>MySQL</h3>
+        <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Git &amp; GitHub</h3>
+        <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>HTML / CSS / JS</h3>
+        <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Data structures &amp; algorithms</h3>
+        <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Linux</h3>
+        <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>A personal portfolio built with Django on the backend and a
+             custom HTML/CSS/JS frontend, showcasing my work and skills.</p>
+          <div class="tech-tags">
+            <span>Django</span><span>Python</span><span>HTML/CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-outline small">Live Demo</a>
+            <a href="#" class="btn btn-outline small">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>REST API Service</h3>
+          <p>A Django REST Framework API with authentication, CRUD endpoints,
+             and MySQL as the data store, tested with Postman.</p>
+          <div class="tech-tags">
+            <span>Django REST</span><span>MySQL</span><span>JWT</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-outline small">Live Demo</a>
+            <a href="#" class="btn btn-outline small">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Task Management App</h3>
+          <p>A full-stack task tracker with user accounts, task status
+             updates, and a clean dashboard for managing daily work.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>Django</span><span>SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-outline small">Live Demo</a>
+            <a href="#" class="btn btn-outline small">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Contact <span>Me</span></h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <p>Have a project in mind or just want to say hello? My inbox is
+           always open.</p>
+        <ul>
+          <li><strong>Email:</strong> srinuanekalla@example.com</li>
+          <li><strong>Phone:</strong> +91 7674056368</li>
+          <li><strong>Location:</strong> India</li>
+        </ul>
+        <div class="social-links">
+          <a href="https://github.com/srinuanekalla-del" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/srinivasula-reddy-anekalla-805362381" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form" method="POST" action="{% url 'contact' %}">
+        {% csrf_token %}
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+        <button type="submit" class="btn btn-primary full-width">Send Message</button>
+        <p class="form-status" id="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Srinivasula Reddy. All rights reserved.</p>
+  </footer>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
