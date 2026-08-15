@@ -29,7 +29,6 @@ def contact(request):
             )
         except Exception:
             pass
-
         return JsonResponse({'success': True})
-
     return JsonResponse({'success': False, 'error': 'Invalid request method.'}, status=405)
+
