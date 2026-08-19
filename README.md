@@ -104,13 +104,13 @@ pip install -r requirements.txt
 
 cd backend
 
-7. Apply migrations
+7. Apply migrations 
 
 python manage.py migrate
 
 8. Start the Django development server
-
-python manage.py runserver
+a) set DEBUG=True
+b) python manage.py runserver
 
 Open the website in your browser:
 
